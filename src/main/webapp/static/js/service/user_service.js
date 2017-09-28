@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $q){
+angular.module('pizzeria').factory('UserService', ['$http', '$q', function($http, $q){
 
     var REST_SERVICE_URI = 'https://cryptic-anchorage-22735.herokuapp.com/user/';
 

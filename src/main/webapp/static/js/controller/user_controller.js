@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp').controller('UserController', ['$scope', 'UserService', function($scope, UserService) {
+angular.module('pizzeria').controller('PizzeriaController', ['$scope', 'UserService', function($scope, UserService) {
     var self = this;
     self.user={id:null,username:'',address:'',email:''};
     self.users=[];
@@ -10,6 +10,13 @@ angular.module('myApp').controller('UserController', ['$scope', 'UserService', f
     self.remove = remove;
     self.reset = reset;
 
+    self.slides = [{ imageUrl: 'https://u.tfstatic.com/restaurant_photos/479/66479/169/612/pizzeria-da-gennaro-vista-sala-5d811.jpg',                                          
+                   },
+                   { imageUrl: 'https://ak5.picdn.net/shutterstock/videos/8009707/thumb/1.jpg',
+                   },
+                   { imageUrl: 'http://exploresrilanka.lk/wp-content/uploads/2013/10/22-copy.jpg'
+                   }
+                  ];
 
     fetchAllUsers();
 
