@@ -1,5 +1,4 @@
-'use strict';
-
-var App = angular.module('pizzeria',[]);
-
-
+(function(){
+	'use strict';
+  angular.module('pizzeria',['ui.bootstrap','ngAnimate']);
+})();
