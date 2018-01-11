@@ -5,7 +5,10 @@
         var self = this;
         self.user={id:null,username:'',address:'',email:''};
         self.users=[];
+        self.showPriceDetail = false;
+        self.priceShown = {};
 
+        self.showDetail = showDetail;
         self.submit = submit;
         self.edit = edit;
         self.remove = remove;
@@ -22,6 +25,25 @@
                         imageUrl: 'http://exploresrilanka.lk/wp-content/uploads/2013/10/22-copy.jpg'
                        }
                       ];
+        self.precios = [{  id: "1",
+                           nombre: "Muzzarella",
+                           chica: 120,
+                           grande:  150,
+                           descripcion: "Con mucha Muzzarella, es la especialidad de la casa"                                         
+                       },
+                       {id: "2", 
+                        nombre: 'Americana',
+                        chica: 140,
+                        grande: 180,
+                        descripcion: "Mucho tomate, Muzzarella y cebolla hacen un manjar de esta pizza"
+                       },
+                       { id: "3", 
+                        nombre: 'Anchoas',
+                        chica: 175,
+                        grande: 200,
+                        descripcion: "El acompañamiento de las anchoas a la Muzzarella da un sabor único"
+                       }
+                      ];              
         self.noWrapSlides = false;
         self.active = 0;
 
@@ -37,6 +59,11 @@
                     console.error('Error while fetching Users');
                 }
             );
+        }
+
+        function showDetail(price){
+            self.showPriceDetail = true;
+            self.priceShown = price;
         }
 
         function createUser(user){
