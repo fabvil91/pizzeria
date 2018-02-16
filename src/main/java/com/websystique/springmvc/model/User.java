@@ -4,21 +4,24 @@ public class User {
 
 	private long id;
 	
-	private String username;
+	private String nombre;
 	
-	private String address;
+	private String descripcion;
 	
-	private String email;
+	private Double chica;
+	
+	private Double grande;
 	
 	public User(){
 		id=0;
 	}
 	
-	public User(long id, String username, String address, String email){
+	public User(long id, String nombre, String descripcion, Double chica, Double grande){
 		this.id = id;
-		this.username = username;
-		this.address = address;
-		this.email = email;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.chica = chica;
+		this.grande = grande;
 	}
 
 	public long getId() {
@@ -28,29 +31,37 @@ public class User {
 	public void setId(long id) {
 		this.id = id;
 	}
-
-	public String getUsername() {
-		return username;
+	
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
-	public String getEmail() {
-		return email;
+	public Double getChica() {
+		return chica;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setChica(Double chica) {
+		this.chica = chica;
+	}
+
+	public Double getGrande() {
+		return grande;
+	}
+
+	public void setGrande(Double grande) {
+		this.grande = grande;
 	}
 
 	@Override
@@ -77,10 +88,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", address=" + address
-				+ ", email=" + email + "]";
-	}
-	
-
-	
+		return "User [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", chica=" + chica
+				+ ", grande=" + grande + "]";
+	}	
 }

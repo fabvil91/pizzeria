@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService{
 	
 	public User findByName(String name) {
 		for(User user : users){
-			if(user.getUsername().equalsIgnoreCase(name)){
+			if(user.getNombre().equalsIgnoreCase(name)){
 				return user;
 			}
 		}
@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	public boolean isUserExist(User user) {
-		return findByName(user.getUsername())!=null;
+		return findByName(user.getNombre())!=null;
 	}
 	
 	public void deleteAllUsers(){
@@ -72,9 +72,11 @@ public class UserServiceImpl implements UserService{
 
 	private static List<User> populateDummyUsers(){
 		List<User> users = new ArrayList<User>();
-		users.add(new User(counter.incrementAndGet(),"Sam", "NY", "sam@abc.com"));
-		users.add(new User(counter.incrementAndGet(),"Tomy", "ALBAMA", "tomy@abc.com"));
-		users.add(new User(counter.incrementAndGet(),"Kelly", "NEBRASKA", "kelly@abc.com"));
+		users.add(new User(counter.incrementAndGet(),"Muzzarella", "Con mucha Muzzarella, es la especialidad de la casa", 125.5D,180D));
+		users.add(new User(counter.incrementAndGet(),"Americana", "Mucho tomate, Muzzarella y cebolla hacen un manjar de esta pizza", 122D,222D));
+		users.add(new User(counter.incrementAndGet(),"Anchoas", "El acompañamiento de las anchoas a la Muzzarella da un sabor único", 132D,222D));
+		users.add(new User(counter.incrementAndGet(),"Salame", "El acompañamiento del salame a la Muzzarella da un sabor único", 92D,233D));
+		users.add(new User(counter.incrementAndGet(),"Fugazzeta", "El acompañamiento de la cebolla a la Muzzarella da un sabor único", 212D,299D));
 		return users;
 	}
 
