@@ -44,64 +44,14 @@
   </div>
 </nav>
 
-<div class="container">        
-     <div style="height:550px; width: 100%; " uib-carousel active="active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+<div class="container"> 
+     <div style="height:550px; width: 100%;" uib-carousel active="active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides"> 
       <div uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="$index">
-        <img ng-src="{{slide.imageUrl}}" style="margin: auto; height:550px; width: 100%;">
-     <!--   <div class="carousel-caption">
-          <h4>Slide {{slide.id}}</h4>
-          <p>{{slide.text}}</p>
-        </div> -->
+        <img ng-src="{{slide.imageUrl}}" style="margin:auto; height:550px; width:100%;">    
       </div>
     </div>
 </div>
-<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
-   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
 
-  
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="https://u.tfstatic.com/restaurant_photos/479/66479/169/612/pizzeria-da-gennaro-vista-sala-5d811.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>The atmosphere in New York is lorem ipsum.</p>
-      </div> 
-    </div>
-
-    <div class="item">
-      <img src="https://ak5.picdn.net/shutterstock/videos/8009707/thumb/1.jpg" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago - A night we won't forget.</p>
-      </div> 
-    </div>
-
-    <div class="item">
-      <img src="http://exploresrilanka.lk/wp-content/uploads/2013/10/22-copy.jpg" alt="Los Angeles">
-      <div class="carousel-caption">
-        <h3>LA</h3>
-        <p>Even though the traffic was a mess, we had the best time.</p>
-      </div> 
-    </div>
-  </div>
-
-  
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div > -->
-
-<!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
   <h3>NUESTRAS PIZZAS</h3>
   <p><em>Excelente calidad!</em></p>
@@ -144,7 +94,6 @@
   </div>
 </div>
 
-<!-- Container (TOUR Section) -->
 <div id="tour" class="">
  <div class="container">
 
@@ -177,14 +126,13 @@
 </div>
 </div>
 
-<!-- Container (Contact Section) -->
 <div id="contact" class="container">
  <h3 class="text-center">Contacto</h3>  
   <div class="row test">
     <div class="col-md-8 col-md-offset-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p>Sugerencias? Contanos!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Lanús, Bs. As., Argentina</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Tel.: +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
     </div>   
   </div>
