@@ -25,7 +25,7 @@
                         imageUrl: 'http://exploresrilanka.lk/wp-content/uploads/2013/10/22-copy.jpg'
                        }
                       ];
-        self.precios = [{  id: "1",
+        /*self.precios = [{  id: "1",
                            nombre: "Muzzarella",
                            chica: 120,
                            grande:  150,
@@ -43,7 +43,7 @@
                         grande: 200,
                         descripcion: "El acompañamiento de las anchoas a la Muzzarella da un sabor único"
                        }
-                      ];              
+                      ];    */          
         self.noWrapSlides = false;
         self.active = 0;
 
@@ -53,7 +53,7 @@
             UserService.fetchAllUsers()
                 .then(
                 function(d) {
-                    self.users = d;
+                    self.precios = d;
                 },
                 function(errResponse){
                     console.error('Error while fetching Users');
