@@ -129,12 +129,18 @@
 <div id="contact" class="container">
  <h3 class="text-center">Contacto</h3>  
   <div class="row test">
-    <div class="col-md-8 col-md-offset-4">
+    <div class="col-md-6">
+      <p>Nosotros</p>
+      <p>Hola HolaHolaHolaHola HolaHolaHolaHola Email: mail@mail.com
+      Somos SomosSomosSomosSomosSomos Somos Somos Email: mail@mail.com
+      Email: mail@mail.com Email: mail@mail.com Email: mail@mail.com</p> 
+    </div>  
+    <div class="col-md-6">
       <p>Sugerencias? Contanos!</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Lanús, Bs. As., Argentina</p>
       <p><span class="glyphicon glyphicon-phone"></span>Tel.: +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
-    </div>   
+    </div>  
   </div>
 </div>
 
